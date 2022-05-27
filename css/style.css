@@ -12,8 +12,7 @@ body {
 
 h1,
 h2,
-h4,
-h5,
+h3,
 a {
   padding: 0;
   margin: 0;
@@ -66,7 +65,7 @@ a {
 }
 
 .header-nav,
-.footer-nav {
+.footer-links {
   margin-left: auto;
 }
 
@@ -131,25 +130,27 @@ p {
   padding-top: 120px;
 }
 
-h1 {
-  font-size: clamp(50px, 12vw, 140px);
+section > h1,
+section > h2 {
+  font-size: 140px;
   line-height: 1.1;
   margin-bottom: 84px;
 }
 
-h2 {
+h2.offer-title {
   font-size: 50px;
   line-height: 1.4;
 }
 
-h4 {
+section > h3 {
   font-size: 24px;
   line-height: 1.58;
   margin-bottom: 241px;
 }
 
-h5 {
+h3.offer-small-title {
   margin: 25px auto 202px;
+  font-size: 23px;
 }
 
 .btn:hover,
@@ -208,21 +209,28 @@ h5 {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1220px) {
+  section > h1,
+  section > h2 {
+    font-size: clamp(50px, 12vw, 140px);
+  }
+} 
+
 @media screen and (max-width: 1020px) {
   .footer-menu {
     display: none;
   }
 
-  .footer-nav {
+  .footer-links {
     margin: auto 30px;
   }
 
-  .footer-nav ul {
+  .footer-links ul {
     padding: 10px;
     text-align: right;
   }
 
-  .footer .footer-nav {
+  .footer .footer-links {
     margin-left: auto;
   }
 
